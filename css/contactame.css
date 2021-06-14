@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: OldSansBlack;
+    src: url(Fonts/OldSansBlack.ttf);
+}
+*,*::after *::before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#contenedor_carga{
+    background-color:#1b1464;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transform: all 1s ease;
+    z-index: 10000;
+}
+#carga{
+    border: 15px solid orangered;
+    border-top-color: whitesmoke ;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+@keyframes girar{
+   from {transform: rotate(0deg);} 
+   to {transform: rotate(360deg);} 
+}
+.contenedor {
+    display: grid;
+    grid-column: center;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right, #0071bc, #2e3192 44.1%, #1b1464, #000a37);
+    justify-content: space-between;
+    z-index: 100;
+    padding: 0 4vw;
+}
+nav ul {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7em;
+}
+li {
+    list-style: none;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #2d0b0b;
+}
+#menuResponsive {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    padding: 25px;
+    right: 0;
+    transition: right 0.6s ease-in-out;
+}
+#menuResponsive,
+.cuadroC:hover {
+    background-color: orangered;
+}
+
+#botonHambCerrar,
+#botonNav {
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+    padding: 13.5px;
+}
+#botonHambCerrar:hover,
+#botonNav:hover {
+    color: orangered;
+}
+@font-face {
+    font-family: OldSansBlack;
+    src: url(Fonts/OldSansBlack.ttf);
+}
+body {
+    background-color: #010101;
+}
+
+.background{
+    top: 20px;
+    height: 100%;
+    width: 100%;
+    animation: movimiento infinite ease 4s;
+    animation-fill-mode: backwards;
+    opacity: 0.2;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+@keyframes opacidad {
+    0% {
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+    }
+
+    50% {
+        height: 100%;
+        width: 100%;
+        opacity: 0.2;
+    }
+
+    100% {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+}
+#element2 {
+    animation: opacidad ease 3s;
+}
+.legal {
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 97;
+    display: flex;
+    justify-content: center;
+    align-content:center ;
+    padding:10px
+}
+.nv {
+    animation-delay: 7s;
+}
+aside{
+    padding: 10rem;
+}
+.cajaFormulario{
+    position: relative;
+    z-index: 98;
+    display: grid;
+    grid-template: center;
+    padding: 20vh;
+}
+.tj{
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#awesome{
+    color: white;
+    padding: 5px;
+}
+.cuadros{
+    opacity: 0.5;
+}
+form#pago{
+	margin: auto;
+	background:none ;
+    color: orange;
+    font-size: 20px;
+    padding: 30px;
+    width: 520px;
+    border: none;
+    font-weight: bold;
+}
+form#pago fieldset{
+	border: none;
+	color:#000;
+}
+form#pago input{
+	font-size: 12px;
+	background: white;
+	border: 1px solid #7ad;
+	border-radius: 3px;
+	float: right;
+	margin-right: 15px;
+    width: 200px;
+	color:blue;
+}
+form#pago select{
+	font-size: 12px;
+	background: white;
+	border: 1px solid #7ad;
+	border-radius: 3px;
+	float: right;
+	margin-right: 15px;
+    width: 200px;
+	color:blue;
+}
+form#pago ol li{
+	line-height: 25px;
+	list-style: none;
+	color: #000;
+}
+form#pago [required]{
+	border: 1 px solid #aaa;
+}
+#botonE{
+    background-color: #0071bc;
+    border: none;
+    margin-left: 208px;
+}
+.Fo{
+    animation-delay: 3.5s;
+}
+.botones{
+    width: 79%;
+    padding-left:18vw ;
+    opacity: 1;
+    position: relative;
+    z-index: 103;
+    display: flex;
+    justify-content: space-between;
+}
+.botonU{
+    animation-delay: 5.5s;
+}
+.botonD{
+    animation-delay: 5s;
+}
+.botonT{
+    animation-delay: 4.5s;
+}
+.botonC{
+    animation-delay: 5s;
+}
+.botonCi{
+    animation-delay: 5.5s;
+}
+
